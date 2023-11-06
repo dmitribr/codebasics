@@ -7,3 +7,7 @@ console.log('Robert');
 console.log('Stannis');
 console.log('Renly');
 //#4
+console.log(9780262531961 + 1);
+//#5
+console.log('What Is Dead May Never Die');
+//#6
