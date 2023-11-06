@@ -22,3 +22,11 @@ console.log(8 / 2 + 5 - -3 / 2);
 //#10
 console.log(70 * (3 + 4) / (8 + 2));
 //#11
+console.log(0.39 * 0.22);
+//#12
+console.log((Infinity + Infinity) / 10);
+//#13
+console.log(NaN + 5);
+//#14
+console.log((5 ** 2) - (3 * 7));
+//#15
