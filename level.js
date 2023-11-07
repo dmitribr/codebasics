@@ -30,3 +30,18 @@ console.log(NaN + 5);
 //#14
 console.log((5 ** 2) - (3 * 7));
 //#15
+console.log('"Khal Drogo\'s favorite word is "athjahakar""');
+//#16
+console.log('- Did Joffrey agree?\n- He did. He also said "I love using \\n".');
+//#17
+console.log('Winter came for ' + 'the House of Frey.');
+//#18
+console.log(String.fromCharCode(126) + "\n" + String.fromCharCode(94) + "\n" + String.fromCharCode(37));
+//#19
+let motto = 'What Is Dead May Never Die!';
+console.log(motto);
+//#20
+let name1 = 'Brienna';
+name1 = 'anneirB';
+console.log(name1);
+//#21
