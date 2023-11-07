@@ -72,3 +72,44 @@ let oneNumber = 11;
 let twoNumber = -100;
 console.log(oneNumber * twoNumber);
 //#26
+let king = 'King Balon the 6th';
+
+let kingCount = 6;
+let roomsCount = 17;
+let allrooms = kingCount * roomsCount;
+
+console.log(king + ' has ' + allrooms + ' rooms.');
+//#27
+const army = 'the white walkers';
+console.log(army);
+//#28
+const stark = 'Arya';
+
+console.log(`Do you want to eat, ${stark}?`);
+//#29
+const name3 = 'Na\nharis';
+console.log(name3[7]);
+//#30
+const number1 = { count: -0.304 };
+console.log(number1.count);
+//#31
+const catCount = 32;
+console.log(catCount[3]);
+//#32
+const one = 'Naharis';
+const two = 'Mormont';
+const three = 'Sand';
+console.log(`${one[2]}${two[1]}${three[3]}${two[4]}${two[2]}`);
+//#33
+const cat1 = '7' - (-8 - -2);
+console.log(cat1);
+//34
+const company1 = 'Apple';
+const company2 = 'Samsung';
+
+console.log(company1.length + company2.length);
+//#35
+const soldiersCount = -2309;
+const cat2 = Math.abs(soldiersCount);
+console.log(cat2);
+//#36
