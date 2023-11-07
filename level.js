@@ -45,3 +45,30 @@ let name1 = 'Brienna';
 name1 = 'anneirB';
 console.log(name1);
 //#21
+let myBrotherCount = 2;
+console.log(myBrotherCount);
+//#22
+let family = 'Targaryen';
+let pet = 'Dragon';
+console.log(family);
+console.log('and');
+console.log(pet);
+//#23
+let eurosCount = 100;
+let euroDollars = eurosCount * 1.25;
+let dollarsYuans = euroDollars * 6.91;
+console.log(euroDollars + '\n' + dollarsYuans);
+//#24
+let info = "We couldn't verify your mother's maiden name.";
+let intro = 'Here is important information about your account security.';
+
+let firstName = 'Joffrey';
+let greeting = 'Hello';
+
+console.log(greeting + ', ' + firstName + '!');
+console.log(intro + '\n' + info);
+//#25
+let oneNumber = 11;
+let twoNumber = -100;
+console.log(oneNumber * twoNumber);
+//#26
