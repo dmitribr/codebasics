@@ -113,3 +113,57 @@ const soldiersCount = -2309;
 const cat2 = Math.abs(soldiersCount);
 console.log(cat2);
 //#36
+const number111 = 923.2238;
+console.log(Math.ceil(number));
+//#37
+const number11 = 10.1234;
+console.log(round(number, 2));
+//#38
+const text = 'Never forget what you are, for surely the world will not';
+console.log(`First: ${text[0]}` + '\n' + `Last: ${text[length(text) - 1]}`);
+//#39
+console.log(Math.min(3, 10, 22, -3, 0));
+//#40
+console.log(Math.round(Math.random() * 10));
+//#41
+const motto2 = 'Family, Duty, Honor';
+console.log(typeof motto);
+//#42
+const text1 = 'a mind needs books as a sword needs a whetstone, if it is to keep its edge.';
+console.log(text.length);
+//#43
+const text2 = 'a MIND needs Books as a Sword needS a WHETSTONE, if it is to keep its edge.';
+console.log(text.toLowerCase());
+//#44
+let firstName1 = '  Grigor   \n';
+firstName1 = firstName1.trim();
+console.log(firstName1);
+//#45
+const text3 = 'Never forget what you are, for surely the world will not';
+console.log(`First: ${text3[0]}` + '\n' + `Last: ${text3[text3.length - 1]}`);
+//#46
+const text4 = 'When \t\n you play a \t\n game of thrones you win or you die.';
+console.log(text4.slice(5, 15).trim().length);
+//#47
+const printMotto = () => {
+    console.log("Winter is coming");
+}
+export default printMotto;
+//#48
+const sayHurrayThreeTimes = () => {
+    return 'hurray! hurray! hurray!'
+}
+export default sayHurrayThreeTimes;
+//#49
+const truncate = (text, length) => {
+
+    return `${text.slice(0, length)}...`;
+  };
+   export default truncate;
+//#50
+const getHiddenCard = (number, last = 4) => {
+    return `${'*'.repeat(last)}${number.slice(number.length - 4, number.length)}`;
+}
+export default getHiddenCard;
+//#51
+
