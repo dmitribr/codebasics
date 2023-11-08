@@ -227,3 +227,192 @@ const whoIsThisHouseToStarks = (lastName) => {
 };
 export default whoIsThisHouseToStarks;
 //#61
+const convertText = (text) => {
+    const upper = text[0];
+    if (text === '') {
+        return '';
+    } else if (upper === upper.toUpperCase()) {
+        return text;
+    }  else {
+        return reverse(text);
+    }
+};
+    
+export default convertText;
+//instructor
+const convertText = (text) => {
+    if (text === '') {
+      return '';
+    }
+  
+    const reversable = text[0] !== text[0].toUpperCase();
+    return reversable ? reverse(text) : text;
+  };
+  export default convertText;
+  //#62
+  const getNumberExplanation = (num) => {
+    switch (num) {
+        case 666:
+        return 'devil number';
+        case 42:
+        return 'answer for everything';
+        case 7:
+        return 'prime number'
+        default:
+        return 'just a number';
+    }
+};
+
+export default getNumberExplanation;
+//#63
+const printNumbers = (initialNumber) => {
+    let i = initialNumber;
+    while (i >= 1) {
+      console.log(i);
+      i = i - 1;
+    }
+    console.log('finished!');
+  };
+  
+  export default printNumbers;
+  //#64
+  const multiplyNumbersFromRange = (first, last) => {
+    let i = first;
+    let result = 1;
+
+    while (i <= last) {
+        result = i * result;
+        i = i + 1;
+    }
+    return result;
+};
+
+export default multiplyNumbersFromRange;
+//#65
+const joinNumbersFromRange = (start, finish) => {
+    let i = start;
+    let sum = '';
+    while (i <= finish) {
+        sum = `${sum}${i}`;
+        i = i + 1;
+    }
+    return sum;
+};
+
+export default joinNumbersFromRange;
+//#66
+const printReversedWordBySymbol = (text) => {
+    /* let textrev = text.split('').reverse().join('');
+     let i = 0;
+ 
+     while (i < textrev.length) {
+         console.log(textrev[i]);
+         i = i + 1;
+     }*/
+     
+     
+     let i = text.length - 1;
+ 
+     while (i >= 0) {
+         console.log(text[i]);
+         i = i - 1;
+     }
+ 
+ };
+
+ export default printReversedWordBySymbol;
+ //#67
+ const countChars = (text, letter) => {
+    let i = 0;
+    let count = 0;
+
+    while (i < text.length) {
+        if (text[i].toLowerCase() === letter || text[i].toUpperCase() === letter) {
+            count = count + 1;
+        } 
+        i = i + 1;
+    }
+    return count;
+};
+export default countChars;
+//#68
+const even = (text) => {
+    let i = 1;
+    let finish = '';
+
+    while (i < text.length) {
+        finish = `${finish}${text[i]}`;
+        i = i + 2;
+    }
+    return finish;
+};
+export default even;
+//instructor 
+const even = (str) => {
+    let i = 0;
+    let result = '';
+    while (i < str.length) {
+      if (i % 2 !== 0) {
+        result = `${result}${str[i]}`;
+      }
+      i = i + 1;
+    }
+  
+    return result;
+  };
+  //#69
+  const filterString = (text, letter) => {
+    let i = 0;
+    let str = '';
+
+    while (i < text.length) {
+        if (text[i] !== letter) {
+            str += text[i]; 
+        }
+        i += 1;
+    }
+    return str;
+}; 
+export default filterString;
+//#70
+const makeItFunny = (text, num) => {
+    let i = 0;
+    let result = '';
+
+    while (i < text.length) {
+        if ((i + 1) % num === 0) {
+            result = `${result}${text[i].toUpperCase()}`;
+        } else {
+            result = `${result}${text[i]}`;
+        }
+        i++;
+    }
+    return result;
+};
+
+export default makeItFunny;
+//#71
+const hasChar = (text, str) => {
+    let i = 0;
+    
+    while (i < text.length) {
+        if (text[i] === str) {
+            return true;
+        }
+        i++;
+    }
+    return false;
+}
+export default hasChar;
+//#72 pzdc
+const encrypt = (str) => {
+    let result = '';
+    for (let i = 0; i < str.length; i += 2) {
+        const nextSymbol = str[i + 1] || '';
+        result = `${result}${nextSymbol}${str[i]}`;
+    }
+
+    return result;
+};
+
+export default encrypt;
