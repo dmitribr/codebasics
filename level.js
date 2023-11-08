@@ -166,4 +166,64 @@ const getHiddenCard = (number, last = 4) => {
 }
 export default getHiddenCard;
 //#51
+const capitalize = (text) => `${text[0].toUpperCase()}${text.slice(1)}`;
+export default capitalize;
+//#52
+const isPensioner = (age) => age >= 60;
+export default isPensioner;
+//#53
+const isMister = (text) => text === 'Mister';
+export default isMister;
+//#54
+const isInternationalPhone = (tel) => tel[0].toString() === '+';
 
+export default isInternationalPhone;
+//#55 leap year
+const isLeapYear = (years) => {
+    const number = years % 400 === 0 || years % 4 === 0 && years % 100 !== 0; 
+    return number;
+};
+export default isLeapYear;
+//#56 Palindrom pzdc
+const reverse = (s) => s.split('').reverse().join('');
+
+const isNotPalindrome = (text) => {
+    const textLower = text.toLowerCase()
+    return textLower !== reverse(textLower);
+};
+
+export default isNotPalindrome;
+//#57
+const getLetter = (name, num) => {
+    return name[num - 1] || '';
+};
+
+export default getLetter;
+//#58
+const guessNumber = (num) => {
+    if (num === 42) {
+        return "You win!";
+    }
+    return "Try again!";
+};
+export default guessNumber;
+//#59
+const normalizeUrl = (adress) => {
+    if (adress.startsWith('https://')) {
+        return adress;
+    } else {
+        return `https://${adress}`;
+    }
+};
+//#60
+const whoIsThisHouseToStarks = (lastName) => {
+    if (lastName === 'Karstark' || lastName === 'Tally') {
+        return 'friend';
+    } else if (lastName === 'Lannister' || lastName === 'Frey') {
+        return 'enemy';
+    } else {
+        return 'neutral';
+    }
+};
+export default whoIsThisHouseToStarks;
+//#61
